@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nashaat Fathy" />
+    <title>Random Quotes Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Local Icons -->
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="quotes d-flex flex-column align-items-center justify-content-center text-center">
+      <div
+        class="container "
+      >
+      <div class="heading mb-4">
+        <h1 class="mb-2">Quote of the Day</h1>
+        <h5>Press the button belwo to recive a random Quote.</h5>
+      </div>
+        <blockquote class="quote w-85 mx-auto bg-color rounded-3 fs-5 shadow-lg d-none p-4 h-75 d-flex flex-column align-items-center justify-content-center" id="blockQuote">
+          <p class="quote-content py-3" id="quote"></p>
+          <footer class="quote-author py-3 fw-bolder fst-italic" id="author"></footer>
+        </blockquote>
+        <button onclick="addnewQuote()" class="btn btn-dark shadow fs-7 border-0 btn-lg" id="newQuote">New Quote</button>
+      </div>
+    </div>
+
+    <!-- Bundle BootStrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
